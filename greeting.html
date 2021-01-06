@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>country</title>
+</head>
+<body style=" background-color: aliceblue;">
+	<div style="text-align: center; font-size: 30px; ">
+		<h1>Enter your Country, State, City</h1>
+		<input style="width: 300px; height: 50px" type="text" name="inputBox" id="myText" placeholder="country,state,city">
+		<button style="width: 80px; height: 50px" id="btn">submit</button><br><hr>
+	</div>
+	<h1 style="font-size: 72px; margin: 0px 270px" > Result = <span id="result"></span></h1>	
+	<h1 style="text-align: center;" ></h1>
+	<pre>vaild Names(india,america,madhya pradesh,gujrat,rajasthan,punjab,indore,dewas,ujjain)</pre>
+
+
+</body>
+</html>
+<script type="text/javascript">
+	var btn = document.getElementById('btn');
+	var result = document.getElementById('result');
+
+	btn.addEventListener('click', function(){
+	var myText = document.getElementById('myText').value;
+
+	if (myText=="india"){
+		result.innerHTML="Namaste India";
+	}else if (myText=="america") {
+		result.innerHTML="Hello! America";
+	}else if (myText=="madhya pradesh") {
+		result.innerHTML="RAM RAM";
+	}else if (myText=="gujrat") {
+		result.innerHTML="Jai Sri Krishna";
+	}else if (myText=="rajasthan") {
+		result.innerHTML="Khamma Ghani";
+	}else if (myText=="punjab") {
+		result.innerHTML="Sat Sri Akaal";
+	}else if (myText=="Dewas") {
+		result.innerHTML="Jay mata di";
+	}else if (myText=="indore") {
+		result.innerHTML="Kai kri riya da ";
+	}else if (myText=="ujjain") {
+		result.innerHTML="jay shree mahakal";
+	}else{
+		result.innerHTML="invaild value"
+	}
+
+	})
+
+</script>

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -75,7 +76,7 @@
 			    <input type="text" id="height" name="height" placeholder="Your Height (CM)...">
 			</form> 
 			<form>
-			    <label for="whight">Whight</label>
+			    <label for="weight">Weight</label>
 			    <input type="text" id="whight" name="whight" placeholder="Your Whight (KG)..."><br>
 			</form>    
 		</div>
@@ -89,19 +90,19 @@
 </html>
 <script type="text/javascript">
 	var height = document.getElementById('height');
-	var whight = document.getElementById('whight');
+	var weight = document.getElementById('weight');
 	var calculateBtn = document.getElementById('calculateBtn');
 	var resetBtn = document.getElementById('resetBtn');
 	var result = document.getElementById('result');
 	calculateBtn.addEventListener('click', function(){
 		// alert();
-	var finalresult =  Number(whight.value) / parseFloat(height.value/100 * height.value/100);
+	var finalresult =  Number(weight.value) / parseFloat(height.value/100 * height.value/100);
 	result.innerHTML = finalresult.toFixed(2);
 	})
 
 	resetBtn.addEventListener('click', function(){
 		height.value = ""
-		whight.value = ""
+		weight.value = ""
 		result.innerHTML = ""
 	})
 
