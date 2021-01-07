@@ -98,6 +98,16 @@
 		// alert();
 	var finalresult =  Number(weight.value) / parseFloat(height.value/100 * height.value/100);
 	result.innerHTML = finalresult.toFixed(2);
+
+		if (finalresult < 18.5){
+			result.innerHTML= finalresult.toFixed(2)  +   "Underweight";
+		}else if (finalresult > 18.5 && finalresult < 25 ) {
+			result.innerHTML=finalresult.toFixed(2)  +   "Normal" ;
+		}else if (finalresult > 25 && finalresult < 30 ) {
+			result.innerHTML=finalresult.toFixed(2)  +   "Over weight" ;
+		}else if (finalresult > 30 ) {
+			result.innerHTML=finalresult.toFixed(2)  +   "Obese range" ;
+		}
 	})
 
 	resetBtn.addEventListener('click', function(){
