@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>check Prime Number</title>
+</head>
+<body>
+	<h1>check prime number</h1>
+</body>
+</html>
+<script type="text/javascript">
+
+// 	function test_prime(n){
+//   if (n===1) {
+//     return false;
+//   }else if(n === 2){
+//     return true;
+//   }else{
+//     for(var x = 2; x < n; x++){
+//       if(n % x === 0){
+//         return false;
+//       }
+//     }
+//     return true;  
+//   }
+// }
+
+// console.log(test_prime(5));
+
+ //-------------------------------------------// 
+		// EXAMPLE 2
+	// function text_prime(num){
+	// 	if (num===1) {
+	// 		return false;
+	// 	}else if (num === 2){
+	// 		return true;
+	// 	}else{
+	// 		for(let x = 2; x < num; x++){
+	// 			if (num % x === 0){
+	// 				console.log("is not prime number");
+	// 				return false;
+	// 			}
+	// 		}
+	// 		console.log("is prime number");
+	// 		return true;
+	// 	}
+	// }
+	// console.log(text_prime(5));
+
+// ----------------------------------------------//
+
+		// EXAMPLE 3
+	// function number_check(num){
+	// 	if (num === 1){
+	// 		return false;
+	// 	}else if (num === 2){
+	// 		return true;
+	// 	}else{
+	// 		for (let x = 2; x < num; x++){
+	// 			if (num % x === 0){
+	// 				console.log( num + "is not prime  number")
+	// 				return false;
+	// 			}
+	// 		}console.log( num  + "is prime number")
+	// 		return true;
+	// 	}
+	// }
+	// console.log(number_check(5));;
+
+// ---------------------------------------------------//
+			// EXAMPLE 4
+	// function check(num){
+	// 	if(num === 1){
+	// 		return false;
+	// 	}else if (num === 2) {
+	// 		return true;
+	// 	}else{
+	// 		for(let x = 2; x < num; x++){
+	// 			if(num % x == 0){
+	// 				return false
+	// 			}
+	// 		} return true;
+	// 	}
+	// }
+	// console.log(check(5));
+
+//---------------------------------------------------------------//
+		// EXAMPLE 5
+	// function isPrime(num) {
+ //    for (let i = 2; i * i <= num; i++)
+ //        if (num % i === 0){
+ //        	console.log("is not prime");	
+ //        	return false; 
+	// }else{
+	// 	console.log("is prime");
+ //    	return num > 1;
+	// }
+	// }
+	// console.log(isPrime(5));
+
+//------------------------------------------------------------------//
+		// EXAMPLE 6
+	// function check_Prime_No(num){
+	// 	for(let i = 2; 2 < num; i++)
+	// 		if( num % i === 0 ){
+	// 			console.log("is not prime number");
+	// 			return false;
+	// 		}else{
+	// 			console.log("is prime number")
+	// 			return num > 1;
+	// 		}
+	// }	
+	// console.log(check_Prime_No(5));
+
+
+//---------------------------------------------------------//
+
+		// EXAMPLE 7
+	// function prime(num){
+	// 	if (num == 1) {
+	// 		return false;
+	// 	}else if(num == 2){
+	// 		return true;
+	// 	}else{
+	// 		for(let i = 2; i < num; i++){
+	// 			if (num % i == 0) {
+	// 				console.log( num  + "  not prime number ")
+	// 				return false;
+	// 			}
+	// 		}
+	// 		console.log( num + "  is prime number")
+	// 		return true;
+	// 	}
+	// }
+	// console.log(prime(5));
+
+//-----------------------------------------------------//
+		// EXAMPLE 8
+	// function prime(num){
+	// 	for(let i = 2; i <= num; i++){
+	// 		if (num % i === 0) {
+	// 			return true;
+	// 		}
+	// 		return num > 1 ;
+	// 	}
+	// }	
+	// console.log(prime(5));
+
+//---------------------------------------------------------//
+			//example 9	
+	// function prime(num){
+	// 	for(let i = 2; i * i <= num; i++){
+	// 		if (num % i === 0) {
+	// 			return true;
+	// 		}
+	// 	}
+	// 	return num > 1;
+	// }		
+	// console.log(prime(5));
+
+//----------------------------------------------------------//
+					// example 10
+// 	function prime(num){
+// 		if (num === 1) {
+// 			return false;
+// 		}else if (num === 2) {
+// 			return true;
+// 		}else{
+// 			for(let i = 2; i < num; i++){
+// 				if (num % i === 0) {
+// 					return false;
+// 				}
+// 			}
+// 			return true;
+// 		}
+
+// 	}					
+// console.log(prime(5));
+
+//----------------------------------------------------------//
+						// EXAMPLE 11
+// 	function prime(num){
+// 		for(let i = 2; i < num; i++){
+// 			if (num % i === 0) {
+// 				return false;
+// 			}
+// 		}
+// 		 return num > 1;
+// 	}					
+// console.log(prime(5));
+
+//-----------------------------------------------------------//
+
+					// example 12
+	// function prime(num){
+	// 	if (num === 1) {
+	// 		return false;
+	// 	}else if(num === 2){
+	// 		return true;
+	// 	}else{
+	// 		for(let i = 2; i < num; i++){
+	// 			if (num % i === 0) {
+	// 			return false;
+	// 			}
+	// 		}
+	// 			return true;
+	// 	}
+	// }				
+	// console.log(prime(5));
+
+	//==============================================//
+				// EXAMPLE 13 arrow function
+	//==============================================//			
+	let prime = (num) => {
+		for(let i = 2; i < num; i++){
+			if (num % i === 0) {
+				return false;
+			}
+		}return num > 1;
+	}	
+	console.log(prime(5));
+</script>

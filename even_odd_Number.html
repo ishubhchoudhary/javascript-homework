@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>even odd number</title>
+</head>
+<body>
+	<h1 align="center">Even Odd Number</h1>
+
+</body>
+</html>
+<script type="text/javascript">
+
+	//======function statement=========//
+	function e_o(num){
+		for(let i = 2; i <= num; i++ )
+			if (i % 2 == 0 ) {
+				console.log( i + "  even number");
+			}
+		else{
+		console.log(i + "  odd number");
+		}
+	}
+	console.log(e_o(10));
+
+	//=========arrow function===============//
+
+	let even_odd = (num) => {
+		for(let i = 2; i <= num; i++)
+			if (i % 2 == 0) {
+				console.log(i + " even number");
+			}else{
+				console.log(i + " odd number");
+			}
+	}
+	console.log(even_odd(5));
+
+</script>
