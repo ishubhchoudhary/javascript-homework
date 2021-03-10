@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM</title>
+</head>
+<body>
+	<h1 style="text-align: center; color: blue;" >[DOM] Document Object Model</h1><hr>
+	<div style="font-size: 30px; text-align: center; background-color: gray">
+		<p>when a web page is loaded, the brower creats a document object model of the page</p>
+		<p style="font-family: sans-serif;">The HTML DOM model is constucted as a tree of object </p>
+	</div><hr>
+	<div style="text-align: center;">
+		<img src="https://img.freepik.com/free-photo/man-jumping-impossible-possible-cliff-sunset-background-business-concept-idea_1323-265.jpg?size=626&ext=jpg" id="images" width="626px" height="417px"><br>
+		<button style="font-size: 20px" id="preBtn">Previous</button>
+		<button style="font-size: 20px" id="nextBtn">Next</button>
+	</div><br><hr>
+		
+		<pre style="font-size: 22px">
+The HTML DOM is a standard object model and programming interface for HTML. It defines:
+
+The HTML elements as objects		
+The properties of all HTML elements
+The methods to access all HTML elements
+The events for all HTML elements
+
+In other words: The HTML DOM is a standard for how to get, change, add, or delete HTML elements.
+		</pre>
+</body>
+</html>
+<script type="text/javascript">
+	let nextBtn = document.querySelector('#nextBtn');
+	nextBtn.addEventListener('click', () =>{
+		let images = document.querySelector('#images');
+		images.src = "https://p0.pxfuel.com/preview/187/783/697/accomplish-quote-motivation-accomplishment-royalty-free-thumbnail.jpg";
+		// images.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM5znw7BHBJR5VGBhaiYXAsdpgmITe9lMOBw&usqp=CAU";
+		images.style = "border : 5px solid red";
+		images.setAttribute('alt','images');
+	})
+	preBtn.addEventListener('click', () =>{
+		let images = document.querySelector('#images');
+		// images.src = "https://p0.pxfuel.com/preview/187/783/697/accomplish-quote-motivation-accomplishment-royalty-free-thumbnail.jpg";
+		images.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM5znw7BHBJR5VGBhaiYXAsdpgmITe9lMOBw&usqp=CAU";
+		images.style = "border : 5px solid red";
+		images.setAttribute('alt','images');
+	})
+</script>

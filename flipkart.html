@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flipkart</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+		
+		<a class="navbar-brand" style="color: yellow; margin: 0px 90px;" href="#"><b>Flipkart</b></a>
+			<form class="form-inline my-2 my-lg-0">
+		   		<input class="form-control mr-sm-2" type="text" placeholder="Search for products, brand and more" style="width: 500px; margin: 0px 0px;">
+		   		<i class="fa fa-search"></i>
+		   		<!-- <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>  -->
+			</form>
+		    	<div class="dropdown" style="margin: 0px 30px;" >
+					<button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+				    Login
+					</button>
+					<div class="dropdown-menu">
+				    	<a class="dropdown-item" href="#" id="facebook"><i class="fa fa-facebook">   Facebook</i></a><hr>
+				    	<a class="dropdown-item" href="#"><i class="fa fa-twitter"></i>  Twitter</a><hr>
+				    	<a class="dropdown-item" href="#"><i class="fa fa-instagram"> Instagram</i></a>
+				 	</div>
+				</div>
+		    	<div class="dropdown" >
+				  	<button type="button" class="btn  dropdown-toggle" data-toggle="dropdown">
+				    More
+				  	</button>
+					<div class="dropdown-menu">
+				    	<a class="dropdown-item" href="#"><i class="fa fa-bell">  Notification Prefrences </i></a><hr>
+				    	<a class="dropdown-item" href="#"><i class="fa fa-briefcase"></i>  Sell On Flipkart</a><hr>
+				    	<a class="dropdown-item" href="#"><i class="fa fa-bullhorn">  24x7 Customer Care</i></a><hr>
+				    	<a class="dropdown-item" href="#"><i class="fa fa-history"></i>  Advertise</a><hr>
+				   		<a class="dropdown-item" href="#"><i class="fa fa-download"></i>  Download App</a>
+				  	</div>
+				</div>
+			<div  style="margin: 0px 30px;">
+				<a href="#" style="color: white"><i class="fa fa-book"></i> Cart</a>
+			</div>
+	</nav>
+
+</body>
+</html>
+<script type="text/javascript">
+	let count = 0 ;
+	// facebook.addEventListener('click', function(){
+	let facebook = setTimeout( function(){
+		document.querySelector('#facebook').click();
+		alert('setInterval');
+	},3000);
+		function myStopFunction() {
+  		clearInterval(facebook);
+	}
+
+</script>
